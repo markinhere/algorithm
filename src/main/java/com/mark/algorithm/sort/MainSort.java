@@ -16,5 +16,14 @@ public class MainSort {
 //        BubbleSort.bubbleSort(array);
         //更优冒泡排序
 //        BubbleSort.betterBubbleSort(array);
+
+        //简单选择排序
+//        SimpleSelectionSort.simpleSelectionSort(array);
+
+        //插入排序
+//        StraightInsertionSort.insertionSort(array);
+
+        //二分法插入排序
+        BinaryInsertSort.binaryInsertSort(array);
     }
 }
