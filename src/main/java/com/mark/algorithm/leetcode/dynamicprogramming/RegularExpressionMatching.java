@@ -1,4 +1,4 @@
-package com.mark.algorithm.leetcode.dynamicProgramming;
+package com.mark.algorithm.leetcode.dynamicprogramming;
 
 /**
  * @Author: Sunwj@sqbj.com

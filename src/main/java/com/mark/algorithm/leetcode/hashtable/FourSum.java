@@ -1,4 +1,4 @@
-package com.mark.algorithm.leetcode.hashTable;
+package com.mark.algorithm.leetcode.hashtable;
 
 import java.util.List;
 
