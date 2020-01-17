@@ -1,5 +1,9 @@
 package com.mark.algorithm.leetcode.array;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @Author: Sunwj@sqbj.com
  * @Date: 2020/1/16 1:27 下午
@@ -23,9 +27,55 @@ package com.mark.algorithm.leetcode.array;
  */
 public class TwoSum {
 
-    public int[] twoSum(int[] nums, int target) {
 
-        return null;
+    public static void main(String[] args) {
+        
+        int[] nums = new int[]{2, 7, 11, 15,1,6,5,8,3};
+
+        int target = 9;
+
+        twoSum(nums,target);
+
+    }
+
+    /**
+     * 先使用最暴力的方法进行代码完成
+     * 这里的思路就是先循环这个数组，分别拿出来数组的每一项和它后边的依次进行+运算，验证是否=目标值
+     *
+     * 时间复杂度 O(n²）
+     * 空间负责度 O(1)
+     * @param nums
+     * @param target
+     * @return
+     */
+    private static void twoSum(int[] nums, int target) {
+
+        if (nums.length>0) {
+            
+            for (int i = 0; i < nums.length; i++) {
+                
+                int startNum = nums[i];
+
+                for (int j = i+1; j < nums.length; j++) {
+                    int endNum = nums[j];
+
+                    if (target == (startNum+endNum)) {
+                        System.out.println("startNum = " + startNum + ", endNum = " + endNum);
+                    }
+                }
+            }
+        }
+    }
+
+
+    /**
+     * 更优的解法1 -- 兩邊哈希表
+     * 思路：
+     * @param nums
+     * @param target
+     */
+    private static void betterTwoSum(int[] nums, int target) {
+
     }
 
 }

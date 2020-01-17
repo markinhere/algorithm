@@ -1,7 +1,5 @@
 package com.mark.algorithm.sort;
 
-import com.mark.algorithm.utils.SortUtils;
-
 import java.util.Arrays;
 
 /**

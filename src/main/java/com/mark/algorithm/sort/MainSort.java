@@ -2,8 +2,6 @@ package com.mark.algorithm.sort;
 
 import com.mark.algorithm.utils.RandomArray;
 
-import java.util.Arrays;
-
 /**
  * @Author: Sunwj@sqbj.com
  * @Date: 2020/1/15 11:32 上午
