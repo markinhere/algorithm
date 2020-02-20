@@ -27,8 +27,29 @@ package com.mark.algorithm.leetcode.array;
  */
 public class ContainerWithMostWater {
 
-    public int maxArea(int[] height) {
 
-        return 0;
+    public static void main(String[] args) {
+        int[] height = {1,8,6,2,5,4,8,3,7} ;
+        int maxArea = maxArea(height);
+        System.out.println(maxArea);
     }
+
+    private static int maxArea(int[] height) {
+
+        int maxArea = 0 ;
+        int i = 0 ;
+        int r = height.length - 1 ;
+        while (i < 1) {
+            maxArea = Math.max(maxArea, Math.min(height[1], height[r]) * (r - 1));
+            if (height[i] < height[r]) {
+                i++;
+            } else {
+                r--;
+            }
+        }
+
+
+        return maxArea;
+    }
+
 }
